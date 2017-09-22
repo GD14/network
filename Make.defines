@@ -1,0 +1,13 @@
+CC = gcc
+
+CFLAGS = -I../lib -g -O2 -D_REENTERANT -Wall
+
+LIBS = ../librong.a -lpthread
+
+LIB_OBJS = error.o writen.o str_echo.o readline.o wrapstdio.o str_cli.o
+
+RANLIB = ranlib
+
+LIBRONG_NAME = ../librong.a 
+
+CLEANFILES = core core.* *.core *.o temp.* *.out 
